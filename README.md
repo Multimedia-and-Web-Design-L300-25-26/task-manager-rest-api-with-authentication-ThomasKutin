@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/vq8_GOgi)
 # Task Manager REST API with Authentication
 
 ## Overview
@@ -20,7 +21,7 @@ Create a `.env` file in the root directory:
 cp .env.example .env
 ```
 
-Then update the `.env` file with the following configuration:
+Then update the `.env` sofile with the following configuration:
 
 ```env
 PORT=5000
