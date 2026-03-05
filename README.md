@@ -21,7 +21,7 @@ Create a `.env` file in the root directory:
 cp .env.example .env
 ```
 
-Then update the `.env` file with the following configuration:
+Then update the `.env` sofile with the following configuration:
 
 ```env
 PORT=5000
