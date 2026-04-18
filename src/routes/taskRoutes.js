@@ -1,27 +1,15 @@
 import express from "express";
-import Task from "../models/Task.js";
+import { createTask, getTasks, deleteTask } from "../controllers/taskController.js";
 import authMiddleware from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
-// Apply auth middleware
+// Protect all routes in this file
 router.use(authMiddleware);
 
-// POST /api/tasks
-router.post("/", async (req, res) => {
-  // - Create task
-  // - Attach owner = req.user._id
-});
-
-// GET /api/tasks
-router.get("/", async (req, res) => {
-  // - Return only tasks belonging to req.user
-});
-
-// DELETE /api/tasks/:id
-router.delete("/:id", async (req, res) => {
-  // - Check ownership
-  // - Delete task
-});
+// Define endpoints and link them to controller functions
+router.post("/", createTask);
+router.get("/", getTasks);
+router.delete("/:id", deleteTask);
 
 export default router;
